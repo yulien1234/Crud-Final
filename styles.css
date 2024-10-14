@@ -1,0 +1,143 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #98bafc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos centrados */
+h1, h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Formularios */
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #f6c980;
+    outline: none;
+    box-shadow: 0 0 8px rgba(246, 246, 246, 0.3);
+}
+
+/* Botones con estilos y transiciones */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4ff5f5;
+}
+
+/* Botones adicionales */
+button.btn-edit {
+    background-color: #2196F3;
+}
+
+button.btn-edit:hover {
+    background-color: #035588;
+}
+
+button.btn-delete {
+    background-color: #f44336;
+    margin-left: 5px;
+}
+
+button.btn-delete:hover {
+    background-color: #d32f2f;
+}
+
+/* Tabla con filas alternas y hover */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead tr {
+    background-color: #004a03;
+    color: white;
+    text-transform: uppercase;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Celdas en modo edición */
+td[contenteditable="true"] {
+    background-color: #fff3e0;
+    border: 1px solid #ffa726;
+}
+
+/* Adaptación móvil */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 10px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
